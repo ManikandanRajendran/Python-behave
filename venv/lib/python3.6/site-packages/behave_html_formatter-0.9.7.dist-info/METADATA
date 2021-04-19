@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: behave-html-formatter
+Version: 0.9.7
+Summary: HTML formatter for Behave
+Home-page: https://github.com/schidlo/behave-html-formatter
+Author: Petr Schindler
+Author-email: pschindl@redhat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: behave
+
+# Html formatter for Behave
+
+To use it with behave create behave.ini file in project folder (or in home) with
+following content:
+
+    # -- FILE: behave.ini
+    # Define ALIAS for HtmlFormatter.
+    [behave.formatters]
+    html = behave_html_formatter:HTMLFormatter
+
+and then use it by running behave with `-f html` parameter.
+
+You can find information about behave and user-defined formatters
+in behave's documentation: <https://behave.readthedocs.io/en/latest/>
+
+
